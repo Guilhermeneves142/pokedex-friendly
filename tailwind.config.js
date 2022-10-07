@@ -5,6 +5,7 @@ module.exports = {
     extend: {
       colors: {
         main: "#919191",
+        dark: "#313131",
         pokedex: "#e3350d",
         games: "#ee6b2f",
         berries: "#e6bc2f",

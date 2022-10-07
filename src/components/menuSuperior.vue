@@ -1,16 +1,17 @@
 <template>
-  <div id="menuSuperior">
-    <div
+  <header id="menuSuperior">
+    <RouterLink
       class="item"
       v-for="item in items"
       :selected="itemSelecionado == item.id"
       :key="item.id"
+      :to="item.route"
       @click="itemSelecionado = item.id"
     >
       <img src="/pokeball.ico" />
       <span>{{ item.texto }}</span>
-    </div>
-  </div>
+    </RouterLink>
+  </header>
 </template>
 
 <script setup lang="ts">
@@ -23,22 +24,37 @@ const items = computed(() => {
     {
       id: 0,
       texto: "Página Inicial",
+      route: {
+        name: "Home",
+      },
     },
     {
       id: 1,
       texto: "Pokédex",
+      route: {
+        name: "Pokedex",
+      },
     },
     {
       id: 2,
       texto: "Games",
+      route: {
+        name: "Games",
+      },
     },
     {
       id: 3,
       texto: "Berries",
+      route: {
+        name: "Berries",
+      },
     },
     {
       id: 4,
       texto: "Pokemon",
+      route: {
+        name: "Pokemon",
+      },
     },
   ];
 });
@@ -46,9 +62,9 @@ const items = computed(() => {
 
 <style scoped>
 #menuSuperior {
-  @apply bg-gray-50 min-w-full h-[6em] flex justify-center items-center text-[#898989];
+  @apply sticky top-0 bg-gray-100 min-w-full h-[6em] flex justify-center items-center text-[#898989];
 }
-#menuSuperior div {
+#menuSuperior a {
   @apply w-[8em];
 }
 img {
