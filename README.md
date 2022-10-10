@@ -1,6 +1,6 @@
 # pokedex-neves
 
-This template should help get you started developing with Vue 3 in Vite.
+Web app sobre a pokedex do jogo Pokemon
 
 ## Recommended IDE Setup
 
