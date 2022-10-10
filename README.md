@@ -1,6 +1,6 @@
 # pokedex-neves
 
-Web app sobre a pokedex do jogo Pokemon
+Web app about pokedex of Pokemon games
 
 ## Recommended IDE Setup
 
