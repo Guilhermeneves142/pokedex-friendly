@@ -62,7 +62,7 @@ const items = computed(() => {
 
 <style scoped>
 #menuSuperior {
-  @apply sticky top-0 bg-gray-100 min-w-full h-[6em] flex justify-center items-center text-[#898989];
+  @apply sticky top-0 bg-gray-100 min-w-full h-[6em] z-50 flex justify-center items-center text-[#898989];
 }
 #menuSuperior a {
   @apply w-[8em];

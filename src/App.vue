@@ -6,7 +6,9 @@ import MenuSuperior from "./components/menuSuperior.vue";
 <template>
   <div id="main">
     <MenuSuperior />
-    <RouterView class="w-[70%] m-auto min-h-screen" />
+    <RouterView
+      class="2xl:w-[75%] xl:w-[95%] lg:w-[95%] md:w-[95%] sm:w-full m-auto min-h-screen"
+    />
   </div>
 </template>
 
